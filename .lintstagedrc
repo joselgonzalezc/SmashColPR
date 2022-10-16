@@ -1,0 +1,4 @@
+{
+  "*": "prettier --ignore-unknown --write",
+  "*.ts": ["bash -c 'tsc --skipLibCheck --noEmit'", "eslint --quiet --exit-on-fatal-error --fix"]
+}

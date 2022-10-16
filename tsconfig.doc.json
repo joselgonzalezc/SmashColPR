@@ -1,0 +1,4 @@
+{
+  "include": ["src/**/*.ts"],
+  "exclude": ["test/*.test.ts", "test/**/*.test.js"]
+}

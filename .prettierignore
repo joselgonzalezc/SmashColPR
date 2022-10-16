@@ -1,0 +1,6 @@
+.git
+.husky
+dist
+documentation
+node_modules
+README.md

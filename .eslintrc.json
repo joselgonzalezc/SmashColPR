@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "no-useless-escape": "warn",
+    "object-curly-spacing": "off",
+    "comma-spacing": "off",
+    "semi": "off",
+    "no-debugger": "error",
+    "no-unused-vars": "off",
+    "no-shadow": "off",
+
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-inferrable-types": "warn",
+    "@typescript-eslint/object-curly-spacing": ["warn", "always"],
+    "@typescript-eslint/no-extra-semi": ["warn"],
+    "@typescript-eslint/no-unused-expressions": [
+      "error",
+      { "allowShortCircuit": true, "allowTernary": true }
+    ],
+    "@typescript-eslint/no-duplicate-imports": [
+      "error",
+      { "includeExports": true }
+    ],
+    "@typescript-eslint/comma-spacing": ["warn"],
+    "@typescript-eslint/no-extra-parens": [
+      "warn",
+      "all",
+      { "conditionalAssign": false, "nestedBinaryExpressions": false }
+    ],
+    "@typescript-eslint/semi": [
+      "error",
+      "always",
+      { "omitLastInOneLineBlock": false }
+    ],
+    "@typescript-eslint/default-param-last": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_" }
+    ],
+    "@typescript-eslint/no-var-requires": ["warn"],
+    "@typescript-eslint/no-this-alias": [
+      "error",
+      { "allowedNames": ["self", "ctx"] }
+    ]
+  }
+}
